@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>day-planner</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 42rem; margin: 4rem auto; padding: 0 1.25rem;
+    font: 16px/1.65 ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif;
+  }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  .sub { opacity: .7; margin-top: 0; }
+  h2 { font-size: 1.05rem; margin-top: 2.25rem; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .9em; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #8884; opacity: .7; font-size: .9rem; }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+
+<h1>day-planner</h1>
+<p class="sub">A personal scheduling tool, run by and for one person.</p>
+
+<p>
+  day-planner reads its owner's Google Calendar, works out which hours are
+  genuinely free, and proposes a plan for the next day: tasks placed in real
+  gaps, coursework spread across the days before it's due, and leftover space
+  put toward longer-term goals. Nothing is written to the calendar until the
+  owner approves the proposal.
+</p>
+
+<h2>What it does</h2>
+<ul>
+  <li>Reads events from the owner's calendars to find free time.</li>
+  <li>Tracks assignment deadlines and how much work is left on each.</li>
+  <li>Mirrors those assignments into a Google Tasks list so they can be
+      checked off.</li>
+  <li>Writes approved time blocks to one dedicated calendar,
+      <em>Planned (AI)</em>, and never to any other.</li>
+</ul>
+
+<h2>Who it's for</h2>
+<p>
+  This is not a product and has no users beyond its author. It is a personal
+  automation that runs on a schedule against a single Google account. It is
+  published here only because Google requires an OAuth consent screen to link
+  to a homepage and policies.
+</p>
+
+<h2>Source</h2>
+<p>
+  The planner is a small Python project. Questions can go to
+  <a href="mailto:xuzherui@gmail.com">xuzherui@gmail.com</a>.
+</p>
+
+<footer>
+  <a href="./privacy.html">Privacy policy</a> &middot;
+  <a href="./terms.html">Terms of service</a>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy — day-planner</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 42rem; margin: 4rem auto; padding: 0 1.25rem;
+    font: 16px/1.65 ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif;
+  }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  .sub { opacity: .7; margin-top: 0; }
+  h2 { font-size: 1.05rem; margin-top: 2.25rem; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .9em; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #8884; opacity: .7; font-size: .9rem; }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+
+<h1>Privacy policy</h1>
+<p class="sub">day-planner &middot; last updated 9 October 2026</p>
+
+<p>
+  day-planner is a personal scheduling tool with a single user: its author.
+  It is not offered as a service to anyone else, and it collects no data from
+  visitors to this page.
+</p>
+
+<h2>What the application accesses</h2>
+<p>
+  When its owner authorizes it, day-planner uses the Google Calendar API and
+  the Google Tasks API on that one account. Specifically it reads calendar
+  events in order to identify free time, creates and updates events on a single
+  dedicated calendar named <em>Planned (AI)</em>, and creates and updates tasks
+  in a single list named <em>Coursework</em>.
+</p>
+<p>
+  It does not read Gmail, Drive, contacts, or location, and it requests no
+  scopes beyond calendar and tasks access.
+</p>
+
+<h2>Where the data goes</h2>
+<p>
+  Calendar and task data is processed in memory during a scheduled run and is
+  not stored in any database or sent to any analytics service. The only data
+  written to disk is a small state file recording assignment titles, due dates,
+  time estimates, and how many minutes have been scheduled against each. That
+  file lives in the owner's own private source repository.
+</p>
+<p>
+  Assignment titles, due dates, and a summary of the day's existing commitments
+  are sent to the Anthropic API so that a language model can classify entries
+  and propose placements. That data is subject to
+  <a href="https://www.anthropic.com/legal/privacy">Anthropic's privacy policy</a>.
+  No credentials are ever sent.
+</p>
+
+<h2>Sharing</h2>
+<p>
+  Nothing is sold, rented, or shared with third parties. The only external
+  services involved are Google (whose data it is) and Anthropic (as described
+  above).
+</p>
+
+<h2>Limited Use</h2>
+<p>
+  day-planner's use and transfer of information received from Google APIs
+  adheres to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+  including the Limited Use requirements.
+</p>
+
+<h2>Retention and removal</h2>
+<p>
+  Access can be revoked at any time at
+  <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>,
+  which immediately and permanently stops all access. The stored state file can
+  be deleted outright; doing so loses only scheduling history.
+</p>
+
+<h2>Contact</h2>
+<p><a href="mailto:xuzherui@gmail.com">xuzherui@gmail.com</a></p>
+
+<footer>
+  <a href="./">Home</a> &middot;
+  <a href="./terms.html">Terms of service</a>
+</footer>
+
+</body>
+</html>
